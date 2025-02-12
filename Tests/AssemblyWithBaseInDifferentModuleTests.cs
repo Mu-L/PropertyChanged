@@ -12,7 +12,7 @@ public class AssemblyWithBaseInDifferentModuleTests
         {
             UseStaticEqualsFromBase = useStaticEqualsFromBase
         };
-        testResult = weavingTask.ExecuteTestRun("AssemblyWithBaseInDifferentModule.dll", ignoreCodes:new []{ "0x80131869" });
+        testResult = weavingTask.ExecuteTestRun("AssemblyWithBaseInDifferentModule.dll", ignoreCodes: ["0x80131869"]);
     }
 
     [Fact]

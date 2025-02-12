@@ -11,7 +11,7 @@
         var result = weaver.ExecuteTestRun(
             "AssemblyWithNonVoidOnPropertyNameChanged.dll",
             assemblyName: "AssemblyWithNonVoidOnPropertyNameChanged_Warn",
-            ignoreCodes: new[] {"0x80131869"});
+            ignoreCodes: ["0x80131869"]);
         return Verifier.Verify(result.Warnings.Single().Text);
     }
 
@@ -26,7 +26,7 @@
         var result = weaver.ExecuteTestRun(
             "AssemblyWithStaticOnPropertyNameChanged.dll",
             assemblyName: "AssemblyWithStaticOnPropertyNameChanged_Warn",
-            ignoreCodes: new[] {"0x80131869"});
+            ignoreCodes: ["0x80131869"]);
         return Verifier.Verify(result.Warnings.Single().Text);
     }
 
@@ -43,11 +43,11 @@
             weaver.ExecuteTestRun(
                 "AssemblyWithNonVoidOnPropertyNameChanged.dll",
                 assemblyName: "AssemblyWithNonVoidOnPropertyNameChanged_NoWarn",
-                ignoreCodes: new[] {"0x80131869"}),
+                ignoreCodes: ["0x80131869"]),
             weaver.ExecuteTestRun(
                 "AssemblyWithStaticOnPropertyNameChanged.dll",
                 assemblyName: "AssemblyWithStaticOnPropertyNameChanged_NoWarn",
-                ignoreCodes: new[] {"0x80131869"})
+                ignoreCodes: ["0x80131869"])
         };
 
         foreach (var result in results)

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using PropertyChanged;
@@ -289,7 +288,7 @@ public class DerivedFromPoco : PocoBase, INotifyPropertyChanged
 
 public class DerivedCallingChild : BaseClass
 {
-    IList<DerivedCallingChild> someChildren = Array.Empty<DerivedCallingChild>();
+    IList<DerivedCallingChild> someChildren = [];
     int property2;
 
     public override int Property1

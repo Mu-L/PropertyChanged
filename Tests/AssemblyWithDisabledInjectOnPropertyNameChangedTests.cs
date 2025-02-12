@@ -10,7 +10,7 @@ public class AssemblyWithDisabledInjectOnPropertyNameChangedTests
         };
         testResult = task.ExecuteTestRun(
             "AssemblyWithDisabledInjectOnPropertyNameChanged.dll",
-            ignoreCodes: new[] {"0x80131869"});
+            ignoreCodes: ["0x80131869"]);
     }
 
     [Fact]

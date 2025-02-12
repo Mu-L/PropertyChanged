@@ -10,7 +10,7 @@ public class AssemblyWithDisabledIsChangedPropertyTests
         };
         testResult = task.ExecuteTestRun(
             "AssemblyWithDisabledIsChangedProperty.dll",
-            ignoreCodes: new[] {"0x80131869"});
+            ignoreCodes: ["0x80131869"]);
     }
 
     [Fact]

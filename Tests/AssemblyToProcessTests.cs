@@ -16,7 +16,7 @@ public class AssemblyToProcessTests(ITestOutputHelper outputHelper)
         var weaver = new ModuleWeaver();
         testResult = weaver.ExecuteTestRun(
             "AssemblyToProcess.dll",
-            ignoreCodes: new[] {"0x80131869"}
+            ignoreCodes: ["0x80131869"]
 #if NETCOREAPP2_0
             , runPeVerify:false
 #endif

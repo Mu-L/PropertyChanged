@@ -10,7 +10,7 @@ public class AssemblyWithDisabledTriggerDependentPropertiesTests
         };
         testResult = task.ExecuteTestRun(
             "AssemblyWithDisabledTriggerDependentProperties.dll",
-            ignoreCodes: new[] {"0x80131869"});
+            ignoreCodes: ["0x80131869"]);
     }
 
     [Fact]
