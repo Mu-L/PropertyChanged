@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <DisableFody>true</DisableFody>
     <IsPackable>false</IsPackable>
+    <OutputType>Exe</OutputType>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="AnalyzerTesting.CSharp.Extensions" />
@@ -12,8 +13,8 @@
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" NoWarn="NU1608" />
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp" NoWarn="NU1608" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" />
-    <PackageReference Include="Verify.Xunit" />
-    <PackageReference Include="xunit" />
+    <PackageReference Include="Verify.XunitV3" />
+    <PackageReference Include="xunit.v3" />
     <PackageReference Include="xunit.runner.visualstudio" PrivateAssets="all" />
     <PackageReference Include="coverlet.collector" PrivateAssets="all" />
   </ItemGroup>

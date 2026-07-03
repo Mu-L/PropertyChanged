@@ -25,7 +25,7 @@ public class CodeGeneratorTest
                      }
 
                      """;
-        var generated = await new Test(source).RunAsync();
+        var generated = await new Test(source).RunAsync(TestContext.Current.CancellationToken);
 
         Assert.Empty(generated);
     }
@@ -46,7 +46,7 @@ public class CodeGeneratorTest
                      }
 
                      """;
-        var generated = await new Test(source).RunAsync();
+        var generated = await new Test(source).RunAsync(TestContext.Current.CancellationToken);
 
         Assert.Empty(generated);
     }
@@ -65,7 +65,7 @@ public class CodeGeneratorTest
                      }
 
                      """;
-        var generated = await new Test(source).RunAsync();
+        var generated = await new Test(source).RunAsync(TestContext.Current.CancellationToken);
         await Verify(generated);
     }
 
@@ -85,10 +85,10 @@ public class CodeGeneratorTest
                      """;
         var test = new Test(source)
         {
-            ExpectedDiagnostics = {CS0535.WithArguments("Class1", "System.ComponentModel.INotifyPropertyChanged.PropertyChanged")}
+            ExpectedDiagnostics = { CS0535.WithArguments("Class1", "System.ComponentModel.INotifyPropertyChanged.PropertyChanged") }
         };
 
-        var generated = await test.RunAsync();
+        var generated = await test.RunAsync(TestContext.Current.CancellationToken);
 
         Assert.Empty(generated);
     }
@@ -105,7 +105,7 @@ public class CodeGeneratorTest
                      }
 
                      """;
-        var generated = await new Test(source).RunAsync();
+        var generated = await new Test(source).RunAsync(TestContext.Current.CancellationToken);
 
         await Verify(generated);
     }
@@ -124,7 +124,7 @@ public class CodeGeneratorTest
                      }
 
                      """;
-        var generated = await new Test(source).RunAsync();
+        var generated = await new Test(source).RunAsync(TestContext.Current.CancellationToken);
 
         await Verify(generated);
     }
@@ -147,7 +147,7 @@ public class CodeGeneratorTest
                      }
 
                      """;
-        var generated = await new Test(source).RunAsync();
+        var generated = await new Test(source).RunAsync(TestContext.Current.CancellationToken);
 
         Assert.Empty(generated);
     }
@@ -176,7 +176,7 @@ public class CodeGeneratorTest
                       }
 
                       """;
-        var generated = await new Test(source1, source2).RunAsync();
+        var generated = await new Test(source1, source2).RunAsync(TestContext.Current.CancellationToken);
 
         Assert.Empty(generated);
     }
@@ -204,7 +204,7 @@ public class CodeGeneratorTest
                       }
 
                       """;
-        var generated = await new Test(source1, source2).RunAsync();
+        var generated = await new Test(source1, source2).RunAsync(TestContext.Current.CancellationToken);
 
         await Verify(generated);
     }
@@ -234,7 +234,7 @@ public class CodeGeneratorTest
                      }
 
                      """;
-        var generated = await new Test(source).RunAsync();
+        var generated = await new Test(source).RunAsync(TestContext.Current.CancellationToken);
 
         await Verify(generated);
     }
@@ -255,10 +255,10 @@ public class CodeGeneratorTest
                      """;
         var test = new Test(source)
         {
-            ExpectedDiagnostics = {CS0535.WithArguments("Class1", "System.ComponentModel.INotifyPropertyChanged.PropertyChanged")}
+            ExpectedDiagnostics = { CS0535.WithArguments("Class1", "System.ComponentModel.INotifyPropertyChanged.PropertyChanged") }
         };
 
-        var generated = await test.RunAsync();
+        var generated = await test.RunAsync(TestContext.Current.CancellationToken);
 
         Assert.Empty(generated);
     }
@@ -278,7 +278,7 @@ public class CodeGeneratorTest
                      }
 
                      """;
-        var generated = await new Test(source).RunAsync();
+        var generated = await new Test(source).RunAsync(TestContext.Current.CancellationToken);
 
         await Verify(generated);
     }
@@ -298,7 +298,7 @@ public class CodeGeneratorTest
                      }
 
                      """;
-        var generated = await new Test(source).RunAsync();
+        var generated = await new Test(source).RunAsync(TestContext.Current.CancellationToken);
 
         Assert.Empty(generated);
     }
@@ -320,7 +320,7 @@ public class CodeGeneratorTest
                      }
 
                      """;
-        var generated = await new Test(source).RunAsync();
+        var generated = await new Test(source).RunAsync(TestContext.Current.CancellationToken);
 
         await Verify(generated);
     }
@@ -345,7 +345,7 @@ public class CodeGeneratorTest
                      }
 
                      """;
-        var generated = await new Test(source).RunAsync();
+        var generated = await new Test(source).RunAsync(TestContext.Current.CancellationToken);
 
         await Verify(generated);
     }
@@ -370,7 +370,7 @@ public class CodeGeneratorTest
                      }
 
                      """;
-        var generated = await new Test(source).RunAsync();
+        var generated = await new Test(source).RunAsync(TestContext.Current.CancellationToken);
 
         await Verify(generated);
     }
@@ -392,7 +392,7 @@ public class CodeGeneratorTest
                      }
 
                      """;
-        var generated = await new Test(source).RunAsync();
+        var generated = await new Test(source).RunAsync(TestContext.Current.CancellationToken);
 
         await Verify(generated);
     }
@@ -412,7 +412,7 @@ public class CodeGeneratorTest
                      }
 
                      """;
-        var generated = await new Test(source).RunAsync();
+        var generated = await new Test(source).RunAsync(TestContext.Current.CancellationToken);
 
         await Verify(generated);
     }
@@ -432,7 +432,7 @@ public class CodeGeneratorTest
                      }
 
                      """;
-        var generated = await new Test(source).RunAsync();
+        var generated = await new Test(source).RunAsync(TestContext.Current.CancellationToken);
 
         await Verify(generated);
     }
@@ -489,7 +489,7 @@ public class CodeGeneratorTest
                      }
 
                      """;
-        var generated = await new Test(source).RunAsync();
+        var generated = await new Test(source).RunAsync(TestContext.Current.CancellationToken);
 
         await Verify(generated);
     }
@@ -522,7 +522,7 @@ public class CodeGeneratorTest
                      }
 
                      """;
-        var generated = await new Test(source).RunAsync();
+        var generated = await new Test(source).RunAsync(TestContext.Current.CancellationToken);
 
         await Verify(generated);
     }
@@ -548,7 +548,7 @@ public class CodeGeneratorTest
                      }
 
                      """;
-        var generated = await new Test(source).RunAsync();
+        var generated = await new Test(source).RunAsync(TestContext.Current.CancellationToken);
 
         await Verify(generated);
     }
@@ -574,7 +574,7 @@ public class CodeGeneratorTest
                      }
 
                      """;
-        var generated = await new Test(source).RunAsync();
+        var generated = await new Test(source).RunAsync(TestContext.Current.CancellationToken);
 
         await Verify(generated);
     }
@@ -608,7 +608,7 @@ public class CodeGeneratorTest
                      }
 
                      """;
-        var generated = await new Test(source).RunAsync();
+        var generated = await new Test(source).RunAsync(TestContext.Current.CancellationToken);
 
         await Verify(generated);
     }
@@ -641,10 +641,10 @@ public class CodeGeneratorTest
                      """;
         var test = new Test(source)
         {
-            ExpectedDiagnostics = {CS0535.WithArguments("Class1.Class2.Class3", "System.ComponentModel.INotifyPropertyChanged.PropertyChanged")}
+            ExpectedDiagnostics = { CS0535.WithArguments("Class1.Class2.Class3", "System.ComponentModel.INotifyPropertyChanged.PropertyChanged") }
         };
 
-        var generated = await test.RunAsync();
+        var generated = await test.RunAsync(TestContext.Current.CancellationToken);
 
         Assert.Empty(generated);
     }

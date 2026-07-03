@@ -1,3 +1,5 @@
+using TestResult = Fody.TestResult;
+
 public class AssemblyWithDisabledTriggerDependentPropertiesTests
 {
     static TestResult testResult;

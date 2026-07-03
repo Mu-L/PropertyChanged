@@ -2,6 +2,8 @@
 using Mono.Cecil;
 using Mono.Cecil.Cil;
 
+using TestResult = Fody.TestResult;
+
 public class AssemblyWithBaseInDifferentModuleTests
 {
     TestResult testResult;
