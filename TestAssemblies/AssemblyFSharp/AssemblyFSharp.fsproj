@@ -10,7 +10,7 @@
     <Compile Include="ClassWithNoOnPropertyChanged.fs" />
     <Compile Include="ClassWithProperties.fs" />
     <ProjectReference Include="..\..\PropertyChanged\PropertyChanged.csproj" />
-    <PackageReference Update="FSharp.Core" Version="8.0.100" />
-    <PackageReference Update="System.ValueTuple" Version="4.5.0" />
+    <PackageReference Include="FSharp.Core" VersionOverride="10.1.301" />
+    <PackageReference Include="System.ValueTuple" VersionOverride="4.6.2" />
   </ItemGroup>
 </Project>
