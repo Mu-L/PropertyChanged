@@ -5,7 +5,7 @@
     <NoWarn>$(NoWarn);NU1507</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="AnalyzerTesting.CSharp.Extensions" Version="1.2.1" />
+    <PackageVersion Include="AnalyzerTesting.CSharp.Extensions" Version="1.2.2" />
     <PackageVersion Include="Fody" Version="6.9.3" />
     <PackageVersion Include="FodyHelpers" Version="6.9.3" />
     <PackageVersion Include="FodyPackaging" Version="6.9.3" />
