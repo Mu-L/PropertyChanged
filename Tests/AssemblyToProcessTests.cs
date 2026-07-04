@@ -5,7 +5,8 @@ using System.Diagnostics;
 using ComplexHierarchy;
 using Mono.Cecil;
 using Mono.Cecil.Cil;
-using Xunit.Abstractions;
+
+using TestResult = Fody.TestResult;
 
 public class AssemblyToProcessTests(ITestOutputHelper outputHelper)
 {

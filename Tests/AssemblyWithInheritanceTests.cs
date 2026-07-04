@@ -5,8 +5,6 @@ using System.Reflection;
 using System.Runtime.Loader;
 #endif
 
-using Xunit.Abstractions;
-
 public class AssemblyWithInheritanceTests(ITestOutputHelper outputHelper)
 {
     static AssemblyWithInheritanceTests()

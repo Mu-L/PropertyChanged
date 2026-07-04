@@ -101,6 +101,8 @@ static class ExtensionMethods
     [Conditional("DEBUG")]
     public static void DebugBeep()
     {
+#pragma warning disable RS1035 // Do not use APIs banned for analyzers
         Task.Run(Console.Beep);
+#pragma warning restore RS1035 // Do not use APIs banned for analyzers
     }
 }

@@ -1,4 +1,6 @@
-﻿public class TypeFilterTests
+﻿using TestResult = Fody.TestResult;
+
+public class TypeFilterTests
 {
     TestResult testResult;
 
