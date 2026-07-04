@@ -27,7 +27,7 @@ public partial class ModuleWeaver
         var propertyDefinition = propertyData.PropertyDefinition;
         var setMethod = propertyDefinition.SetMethod;
 
-        if (setMethod.Name == "set_Item" && setMethod.Parameters.Count == 2 && setMethod.Parameters[1].Name == "value")
+        if (setMethod.Name == "set_Item" && setMethod.Parameters.Count > 1 && setMethod.Parameters.Last().Name == "value")
         {
             return "Property is an indexer.";
         }
